@@ -15,3 +15,14 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+
+myList = ["milk", "eggs", "bacon", "cookies"]
+friendList = ["beer", "cookies", "apples", "milk", "milk"]
+
+# Create shared list, remove duplicated, and add "Buy" before each item
+sharedList = myList.union(friendList)
+    .sort
+    .map {|item| "Buy #{item}"}
+
+puts sharedList

@@ -3,6 +3,29 @@
 # ruby 4-hashes.rb
 
 # Hashes are lists of *key-value pairs*
+myProfile = 
+{
+    "name" => 
+    {
+        "first" => "Giggs",
+        "last" => "Rov"
+    },
+    "location" => 
+    {
+            "state" => "IL",
+            "city" => "Evanston"
+    },
+    "timeline" => 
+    [
+        "teaching at Kellog",
+        "ate tacos",
+        "ate breakfast tacos"
+    ]
+}
+
+puts myProfile["timeline"][-1]
+
+
 
 # Accessing data from the hash
 
